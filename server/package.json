@@ -1,0 +1,30 @@
+{
+  "name": "graphql-bookshelf-server",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --hot src/index.ts",
+    "start": "bun src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/ws": "^8.18.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@apollo/server": "^5.4.0",
+    "@graphql-tools/schema": "^10.0.31",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "graphql": "^16.13.1",
+    "graphql-subscriptions": "^3.0.0",
+    "graphql-tag": "^2.12.6",
+    "graphql-ws": "^6.0.7",
+    "ws": "^8.19.0"
+  }
+}
